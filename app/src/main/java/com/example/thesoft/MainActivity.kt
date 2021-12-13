@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             LayoutInflater.from(this).inflate(R.layout.crate_item_dialog, null, false)
         dialog.setView(adicionarDialogView).setPositiveButton("Confirmar") { _, _ ->
             val input = adicionarDialogView.findViewById<EditText>(R.id.CriarItemInput)
-            val novoitem = input.text
+            val novoitem = input.text .toString()
         }
     }
 }
